@@ -13,7 +13,7 @@ Starting from a skeleton project made with React, TypeScript, Redux and StyledCo
 - Display the received array of JSON objects through a UserProfile component that shows the user's photo and their full name
 
 ## Restrictions
-### The project had the followin restrictions:
+### The project had the following restrictions:
 - Use Redux to store the fetched users
 - Handle all errors
 - Validate the entered input so that we make sure to only send valid numbers in the request
