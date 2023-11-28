@@ -1,5 +1,7 @@
 # React Home Assignment for Qualitest Junior FE role
 
+[![Technologies](https://skillicons.dev/icons?i=ts,react,redux,styledcomponents)](https://skillicons.dev)
+
 ## Summary
 Starting from a skeleton project made with React, TypeScript, Redux and StyledComponents build a Home page which handles user input, makes a REST request to get multiple dummy persons and displays them one by one as in a slideshow.
 
