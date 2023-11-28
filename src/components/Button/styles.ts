@@ -6,7 +6,7 @@ const getButtonStyles = (theme: Theme, variant?: ButtonVariants) => {
   switch (variant) {
     case "primary":
       return `
-          background: ${theme.colors.primary};
+          background: ${theme.colors.buttonBackground};
           color: ${theme.colors.white};
         `;
     case "secondary":
@@ -20,17 +20,20 @@ const getButtonStyles = (theme: Theme, variant?: ButtonVariants) => {
   }
 };
 
-export const StyledButton = styled.button<{ variant?: ButtonVariants }>`
+export const StyledButton = styled.button<{ $variant?: ButtonVariants }>`
   padding: ${({ theme }) => theme.spacing.medium};
   font-size: ${({ theme }) => theme.typography.fontSizes.medium};
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  min-width: 120px;
+  width: 120px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
 
   &:hover {
     opacity: 0.8;
   }
 
-  ${({ theme, variant }) => getButtonStyles(theme as Theme, variant)}
+  ${({ theme, $variant }) => getButtonStyles(theme as Theme, $variant)}
 `;

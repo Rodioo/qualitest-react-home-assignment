@@ -1,11 +1,15 @@
-import { Input } from "../components/Input/Input";
-import { PageWrapper } from "./styles";
+import {Input} from "../components/Input/Input";
+import {PageWrapper} from "./styles";
+import {Slideshow} from "../features/users/components/Slideshow/Slideshow";
+import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 
 export const Home = () => {
   return (
-    <PageWrapper>
-      <Input />
-      {/* Slideshow should be rendered here */}
-    </PageWrapper>
+    <ErrorBoundary>
+      <PageWrapper>
+        <Input/>
+        <Slideshow />
+      </PageWrapper>
+    </ErrorBoundary>
   );
 };

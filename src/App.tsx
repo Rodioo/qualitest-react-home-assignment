@@ -1,10 +1,10 @@
-import { ThemeProvider } from "styled-components";
+import {ThemeProvider} from "styled-components";
 import "./App.css";
-import { theme } from "./theme/theme";
-import { Provider } from "react-redux";
-import { store } from "./store/store";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./routing/router";
+import {theme} from "./theme/theme";
+import {Provider} from "react-redux";
+import {store} from "./store/store";
+import {RouterProvider} from "react-router-dom";
+import {router} from "./routing/router";
 
 /**
  *
@@ -28,7 +28,7 @@ function App() {
     <main>
       <ThemeProvider theme={theme}>
         <Provider store={store}>
-          <RouterProvider router={router} />
+          <RouterProvider router={router}/>
         </Provider>
       </ThemeProvider>
     </main>
